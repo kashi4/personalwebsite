@@ -1,0 +1,61 @@
+h1{
+    color:#ff0000;
+}
+
+#contact{
+    color: #0000ff;
+}
+
+.about{
+    color: #008000;
+}
+
+#main{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+/* RESUME BUTTON */
+.btn:link,
+.btn:visited ,input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s,color 0.2s;
+    
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color:#87cefa;
+    border:1px solid #ffff00; 
+    color: #fff;
+    margin-right: 15px;
+
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #87cefa;
+}
+
+.btn:hover,
+.btn:active {
+    border:1px solid #ffff00;
+    
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border:1px solid #ffff00;
+    color: #fff;
+}
+
+/* Home page css */
+img{
+    width: 200px;
+    height:auto;
+}
