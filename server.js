@@ -27,7 +27,7 @@ app.get('/resume',(req, res) =>{
 app.get('/contact',(req, res) =>{
     res.render('contact');
 });
-
+// this is the portfolio route handler
 app.get('/portfolio',(req, res) =>{
     res.render('portfolio');
 });
