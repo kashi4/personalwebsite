@@ -1,21 +1,55 @@
+*{
+    box-sizing: border-box;
+}
 h1{
-    color:#ff0000;
+    
+    color: #007bff;
 }
 
-#contact{
-    color: #0000ff;
-}
-
-.about{
-    color: #008000;
-}
 
 #main{
     margin-top: 60px;
     margin-bottom: 20px;
 }
+/* Home page css */
+img{
+    width: 450px;
+    height:auto;
+}
 
-/* RESUME BUTTON */
+#homepage{
+    text-align: center;
+}
+
+.para{
+    margin: 60px;
+    margin-bottom: 30px;
+}
+
+/* ABOUT  Page */
+.about{
+    color: #008000;
+}
+
+
+/* PORTFOLIO  Page */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+ .col-sm-4{
+     margin: 40px 45px 40px 40px;
+     padding:5px 5px 5px 5px;
+ }
+/* RESUME  Page */
 .btn:link,
 .btn:visited ,input[type=submit]{
     display: inline-block;
@@ -54,8 +88,7 @@ h1{
     color: #fff;
 }
 
-/* Home page css */
-img{
-    width: 200px;
-    height:auto;
+/* CONTACT  Page */
+#contact{
+    color: #0000ff;
 }
