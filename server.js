@@ -2,6 +2,11 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');
 const mongoose =require('mongoose');
+const keys = require('./config/keys');
+mongoose.connect(keys.MongoURI,{useNewUrlParser:true,
+useUnifiedTopology:true},()=>{
+    console.log('connected to MongoDB')
+});
 
 const app = express();
 // setup template engine
@@ -57,7 +62,10 @@ app.post('/getMessage', (req, res) => {
         email: req.body.email,
         message: req.body.message
     }
-    console.log(newMessage);
+    new Message(newMessage).save()
+    .then(()=>{
+        res.render('inbox');
+    })
 });
 // this is the portfolio route handler
 app.get('/portfolio',(req, res) =>{

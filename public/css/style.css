@@ -1,6 +1,8 @@
-*{
-    box-sizing: border-box;
+.main-body{
+    background-color: lightgray;
 }
+
+
 h1{
     
     color: #007bff;
@@ -89,3 +91,10 @@ img{
 #contact{
     color: #0000ff;
 }
+
+/* FOOTER */
+
+.fa{
+    color:aliceblue;
+}
+
