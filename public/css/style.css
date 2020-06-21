@@ -1,3 +1,10 @@
+
+*{
+    margin:0;
+    padding:0;;
+    font-family: Verdana;
+}
+
 .main-body{
     background-color: lightgray;
 }
@@ -12,6 +19,10 @@ h1{
 #main{
     margin-top: 60px;
     margin-bottom: 20px;
+    background-image: url(/images/background01\ \(3\).jpg);
+    height: 100vh;
+    width: 100%;
+
 }
 /* Home page css */
 img{
@@ -87,6 +98,19 @@ img{
     color: #fff;
 }
 
+
+/* RESUME   Page */
+
+.btn {
+    padding-bottom:30px;
+    margin-top:15px;
+    
+}
+
+.btn, h1 {
+    padding-bottom:30px;
+ 
+}
 /* CONTACT  Page */
 #contact{
     color: #0000ff;
@@ -94,7 +118,32 @@ img{
 
 /* FOOTER */
 
-.fa{
-    color:aliceblue;
+
+
+footer {
+    font-size: smaller; /* smaller */;
 }
 
+/*NAVIGATION STYLES */
+.navbar {
+    background:;
+  }
+  .nav-link,
+  .navbar-brand {
+    color: #fff;
+    cursor: pointer;
+  }
+  .nav-link {
+    margin-right: 1em !important;
+  }
+  .nav-link:hover {
+    color: #000;
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+.navbar-brand img{
+    padding-left:140px;
+    height:55px;
+}
