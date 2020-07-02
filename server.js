@@ -46,16 +46,19 @@ app.get('/',(req, res) =>{
 app.get('/about',(req, res) =>{
     res.render('about');
 });
-
-// this is the resume route handler
-app.get('/resume',(req, res) =>{
-    res.render('resume');
+// this is the portfolio route handler
+app.get('/portfolio',(req, res) =>{
+    res.render('portfolio');
+});
+app.get('/education',(req,resp) =>{
+    res.render('education');
 });
 
 // this is the contact route handler
 app.get('/contact',(req, res) =>{
     res.render('contact');
 });
+
 app.post('/getMessage', (req, res) => {
     const newMessage = {
         name: req.body.name,
@@ -67,10 +70,7 @@ app.post('/getMessage', (req, res) => {
         res.render('inbox');
     })
 });
-// this is the portfolio route handler
-app.get('/portfolio',(req, res) =>{
-    res.render('portfolio');
-});
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
